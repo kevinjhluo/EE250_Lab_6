@@ -11,5 +11,5 @@ while True:
    if(sensor_value > ultrasonic_value):
       setText(f"{sensor_value}cm OBJ PRES \n {ultrasonic_value}cm")
    else:
-      setText(f"{sensor_value}cm \n {ultrasonic_value}cm")
+      setText_norefresh(f"{sensor_value}cm                         \n {ultrasonic_value}cm")
    time.sleep(0.2)
