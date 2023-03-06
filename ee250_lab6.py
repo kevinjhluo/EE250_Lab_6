@@ -7,7 +7,8 @@ ultrasonic_ranger = 6
 while True:
    sensor_value = grovepi.analogRead(potentiometer)
    ultrasonic_value = grovepi.ultrasonicRead(ultrasonic_ranger)
-   if(sensor_value > ultrasonic_value):
+
+if(sensor_value > ultrasonic_value):
       setText(f"{sensor_value}cm OBJ PRES \n {ultrasonic_value}cm")
-   else:
+else:
       setText(f"{sensor_value}cm \n {ultrasonic_value}cm")
